@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Place the following in /etc/cron.d/auto_update_run
+#0 3 * * * root sleep ${RANDOM:0:2}m && /scripts/autoupdate.sh
+
+
 export DEBIAN_FRONTEND=noninteractive
 mkdir -p /var/log/autoupdate
 if [ ! -d /var/log/autoupdate ]; then
