@@ -2,6 +2,8 @@
 
 #Place the following in /etc/cron.d/auto_update_run
 #0 3 * * * root sleep ${RANDOM:0:2}m && /scripts/autoupdate.sh
+#Then run sudo service cron reload
+
 
 
 export DEBIAN_FRONTEND=noninteractive
